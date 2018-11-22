@@ -22,6 +22,7 @@ with open ("jenisov_vlastnici_dopln.csv", "w", encoding="UTF-16") as output:
                 ownurl1=ownurl[0].split('<td>')
                 ownurl2=ownurl1[-1].split(",")
                 ownerswriter.writerow(row+[ownurl2[0]])
+                print('row '+str(i)+' is ok')
             i+=1
 
 
